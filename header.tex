@@ -1,0 +1,82 @@
+\documentclass[9pt]{beamer}
+
+% ============ Import Library ============
+% Using vietnamese
+\usepackage[utf8]{vietnam}
+\usepackage[vietnam=nohyphenation]{hyphsubst}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+% Some essential libs for math
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{mathtools}
+\usepackage{cases}
+\usepackage{commath}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+\usepackage[all]{xy}
+% Essential libs for paper format
+\usepackage{graphicx}
+\usepackage{scrextend}
+% Others
+\usepackage{fancyhdr}
+\usepackage[Glenn]{fncychap}
+\usepackage{lipsum}
+% \usepackage{tikz, tcolorbox}
+\usepackage{amsthm}
+% Font style
+\setbeamertemplate{theorems}[numbered]
+
+% ============ Configs ============
+% Define commands
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\newcommand{\nl}{\\[1.5mm]}
+\newcommand{\nll}{\\[2.0mm]}
+\newcommand{\nlll}{\\[3.0mm]}
+\newcommand{\dlim}{\displaystyle\lim}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\renewcommand{\P}{\mathbb P}
+\newcommand*{\QED}[1][$\square$]{%
+\leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{#1}%
+}
+\newcommand*{\QEDFill}{\null\nobreak\hfill\ensuremath{\blacksquare}}
+\newcommand{\startproof}{\noindent\textit{Chứng minh:\enskip}}
+
+% Change largesymbols to other font
+\DeclareMathOperator{\isom}{Isom}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareSymbolFont{largesymbols}  {OMX}{matha}{m}{n}
+
+\theoremstyle{definition}
+\newtheorem{remark}{Nhận xét}[section]
+\newtheorem{define}{Định nghĩa}[section]
+\newtheorem{proposition}{Mệnh đề}
+\newtheorem{lemma1}{Bổ đề}
+\newtheorem{theorem1}{Định lí}
+\newtheorem{example1}{Ví dụ}
+\newtheorem{corollary1}{Hệ quả}
+\deftranslation[to=vietnamese]{theorem}{Định lí}
+\deftranslation[to=vietnamese]{lemma}{Bổ đề}
+
+% Beamer configs
+\usetheme[progressbar=frametitle,block=fill]{metropolis}
+\setbeamertemplate{frame numbering}[fraction]
+\useoutertheme{metropolis}
+\useinnertheme{metropolis}
+\usefonttheme{metropolis}
+\setbeamercolor{background canvas}{bg=white}
+
+\definecolor{mycolor}{rgb}{0.75, 0.0, 0.0}
+\usecolortheme[named=mycolor]{structure}
+% title info
+\date{}
+\author{\textbf{SV trình bày:} Nguyễn Đình Đăng Khoa\\[2mm]\textbf{GV hướng dẫn:} Bùi Anh Tuấn}
+\title[Short title]{\huge\textbf{Nhóm tinh thể}}
+\subtitle{\normalsize{Báo cáo đề tài REU - VIASM}}
+\setbeamersize{text margin left = 16pt, text margin right = 16pt}
